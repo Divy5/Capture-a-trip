@@ -1,4 +1,4 @@
-# Capture A Trip — Homepage
+# Capture A Trip — Landing Page
 
 A modern and fully responsive travel website homepage developed as a frontend development assignment for Capture A Trip.
 
