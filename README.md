@@ -6,7 +6,7 @@ The project is built with Next.js and focuses on accurate UI implementation, res
 
 ## 🚀 Live Demo
 
-[Add Live Demo URL]
+capture-a-trip.netlify.app
 
 ## 🛠️ Tech Stack
 
