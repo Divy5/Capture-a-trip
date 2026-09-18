@@ -5,7 +5,8 @@ A modern and fully responsive travel website homepage developed as a frontend de
 The project is built with Next.js and focuses on accurate UI implementation, responsive design, reusable components, performance, SEO, and a clean component-based architecture.
 
 ## 🚀 Live Demo
-<a href="[https://example.com](https://capture-a-trip.netlify.app/)" target="_blank"
+<a href="https://capture-a-trip.netlify.app/" target="_blank" rel="noopener noreferrer">
+  🚀 View Live Website
 </a>
 
 ## 🛠️ Tech Stack
