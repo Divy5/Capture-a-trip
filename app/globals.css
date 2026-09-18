@@ -1,0 +1,96 @@
+/* global layout setup & custom fonts */
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'Norsy';
+    src: url('/fonts/norsy-regular.otf') format('opentype'),
+         url('/norsy-regular.otf') format('opentype'),
+         url('/norsy%20font/norsy-regular.otf') format('opentype'),
+         local('Norsy');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  :root {
+    --font-norsy-family: var(--font-norsy-custom), 'Norsy', sans-serif;
+    --font-aktiv-regular: 'AktivGrotesk-Regular', var(--font-aktiv-grotesk), 'Plus Jakarta Sans', sans-serif;
+    --font-aktiv-medium: 'AktivGrotesk-Medium', var(--font-aktiv-grotesk), 'Plus Jakarta Sans', sans-serif;
+    --font-aktiv-bold: 'AktivGrotesk-Bold', var(--font-aktiv-grotesk), 'Plus Jakarta Sans', sans-serif;
+    --font-dm-sans-family: var(--font-dm-sans), 'DM Sans', sans-serif;
+    --font-manrope-family: var(--font-manrope), 'Manrope', sans-serif;
+
+    --color-primary: #008342;
+    --color-primary-dark: #006633;
+    --color-bg-dark: #03100A;
+  }
+
+  /* smooth scroll for internal anchor links */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    background-color: var(--color-bg-dark);
+    color: #ffffff;
+    font-family: var(--font-aktiv-regular);
+    overflow-x: hidden;
+  }
+}
+
+.font-norsy {
+  font-family: var(--font-norsy-custom), 'Norsy', sans-serif !important;
+}
+
+/* Custom scrollbar for horizontal card slider */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom horizontal scrollbar styling */
+.custom-horizontal-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.custom-horizontal-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 100px;
+}
+.custom-horizontal-scrollbar::-webkit-scrollbar-thumb {
+  background: #008342;
+  border-radius: 100px;
+}
+
+/* Custom vertical scrollbar for dropdown menus */
+.custom-vertical-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+.custom-vertical-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 100px;
+}
+.custom-vertical-scrollbar::-webkit-scrollbar-thumb {
+  background: #008342;
+  border-radius: 100px;
+}
+
+/* Dropdown animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-dropdown {
+  animation: fadeInScale 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
